@@ -15,12 +15,13 @@ import java.time.LocalDate;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class Meal_Options extends AppCompatActivity {
-    TextView date;
+    TextView date,Status;
     LocalDate d = LocalDate.now();
     String x = d.toString();
     String Day1="2019-10-04";
     String Day2="2019-10-05";
     String Day3="2019-10-06";
+    String nt="Come back On the 4th of Oct";
 
 
 
@@ -31,6 +32,7 @@ public class Meal_Options extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meal__options);
         date = findViewById(R.id.currdate);
+        Status = findViewById(R.id.Status);
         date.setText(x);
         if(x.equals(Day1))
         {
@@ -40,36 +42,53 @@ public class Meal_Options extends AppCompatActivity {
         {
             day="Day2";
         }
-        else
+        else if(x.equals(Day3))
         {
             day="Day3";
+        }
+        else
+        {
+            Status.setText(nt);
         }
     }
     public void Lunch(View v)
     {
-        Intent myIntent = new Intent(Meal_Options.this,MainActivity.class);
-        myIntent.putExtra("Day", day);
-        myIntent.putExtra("Meal","Lunch");
-        startActivity(myIntent);
-
-
+        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+            Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
+            myIntent.putExtra("Day", day);
+            myIntent.putExtra("Meal", "Lunch");
+            startActivity(myIntent);
+        }
+        else
+            {
+                Status.setText(nt);
+            }
     }
     public void Dinner(View v)
     {
-        Intent myIntent = new Intent(Meal_Options.this,MainActivity.class);
-        myIntent.putExtra("Day", day);
-        myIntent.putExtra("Meal","Dinner");
-        startActivity(myIntent);
-
-
+        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+            Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
+            myIntent.putExtra("Day", day);
+            myIntent.putExtra("Meal", "Dinner");
+            startActivity(myIntent);
+        }
+        else
+        {
+            Status.setText(nt);
+        }
     }
     public void Breakfast(View v)
     {
-        Intent myIntent = new Intent(Meal_Options.this,MainActivity.class);
-        myIntent.putExtra("Day", day);
-        myIntent.putExtra("Meal","Breakfast");
-        startActivity(myIntent);
-
-
+        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+            Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
+            myIntent.putExtra("Day", day);
+            myIntent.putExtra("Meal", "Breakfast");
+            startActivity(myIntent);
+        }
+        else
+        {
+            Status.setText(nt);
+        }
     }
+
 }
