@@ -50,7 +50,7 @@ public class Meal_Options extends AppCompatActivity {
     }
     public void Lunch(View v)
     {
-        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+        if(day.equals("Day1")||day.equals("Day2")||day.equals("Day3")) {
             Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
             myIntent.putExtra("Day", day);
             myIntent.putExtra("Meal", "Lunch");
@@ -63,7 +63,7 @@ public class Meal_Options extends AppCompatActivity {
     }
     public void Dinner(View v)
     {
-        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+        if(day.equals("Day1")||day.equals("Day2")||day.equals("Day3")) {
             Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
             myIntent.putExtra("Day", day);
             myIntent.putExtra("Meal", "Dinner");
@@ -76,7 +76,7 @@ public class Meal_Options extends AppCompatActivity {
     }
     public void Breakfast(View v)
     {
-        if(day.equals(Day1)||day.equals(Day2)||day.equals(Day3)) {
+        if(day.equals("Day1")||day.equals("Day2")||day.equals("Day3")) {
             Intent myIntent = new Intent(Meal_Options.this, MainActivity.class);
             myIntent.putExtra("Day", day);
             myIntent.putExtra("Meal", "Breakfast");
