@@ -18,9 +18,9 @@ public class Meal_Options extends AppCompatActivity {
     TextView date;
     LocalDate d = LocalDate.now();
     String x = d.toString();
-    String Day1="2019-10-06";
-    String Day2="2019-10-07";
-    String Day3="2019-10-08";
+    String Day1="2019-10-04";
+    String Day2="2019-10-05";
+    String Day3="2019-10-06";
 
 
 
