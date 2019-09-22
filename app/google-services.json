@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "399187621882",
+    "firebase_url": "https://munmeal.firebaseio.com",
+    "project_id": "munmeal",
+    "storage_bucket": "munmeal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399187621882:android:6cfc8f1bb1b91a7247d643",
+        "android_client_info": {
+          "package_name": "app.android.meal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399187621882-6ntdgph13gmvae3sh91eln5b0jvp1d5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsysdNzeS9F-g_FB_WT8HfjA_wpOUgvdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399187621882-6ntdgph13gmvae3sh91eln5b0jvp1d5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399187621882:android:487a3b093350c72d47d643",
+        "android_client_info": {
+          "package_name": "app.android.munmeal_scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399187621882-6ntdgph13gmvae3sh91eln5b0jvp1d5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsysdNzeS9F-g_FB_WT8HfjA_wpOUgvdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399187621882-6ntdgph13gmvae3sh91eln5b0jvp1d5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
