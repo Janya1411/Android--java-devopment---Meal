@@ -42,14 +42,11 @@ public class Meal_Options extends AppCompatActivity {
         {
             day="Day2";
         }
-        else if(x.equals(Day3))
+        else
         {
             day="Day3";
         }
-        else
-        {
-            Status.setText(nt);
-        }
+
     }
     public void Lunch(View v)
     {
